@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Sarala&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+
+}
+body{
+    font-size: 100%;
+    background:linear-gradient(10deg,#fffff4 0, #fffff2 4.17%, #ffffef 8.33%, #ffffec 12.5%, #ffffe8 16.67%, #ffffe4 20.83%, #ffffe0 25%, #feffdc 29.17%, #f3ffd7 33.33%, #e6ffd3 37.5%, #d8fbcf 41.67%, #c7f7cc 45.83%, #b5f2c9 50%, #a1edc8 54.17%, #8de9c9 58.33%, #79e4cc 62.5%, #63e0d0 66.67%, #4bddd6 70.83%, #2fd9dd 75%, #00d6e4 79.17%, #00d3eb 83.33%, #00d0f3 87.5%, #00cdfa 91.67%, #00cbff 95.83%, #22c9ff 100%)
+}
+.cabecalho{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 24px;
+}
+.cabecalho-imagem-um{
+    height: 100px;
+}
+.cabecalho-imagem-dois{
+    height: 100px;
+}
+.cabecalho-menu{
+    display: flex;
+    gap: 32px;
+}
+.cabecalho-menu-item:hover{
+    color: #ee6a1e;
+}
+.cabecalho-menu-item{
+    font-family: 'Sarala', sans-serif;
+    color: white;
+    height: 400;
+    font-size: 18px;
+}
+.conteudo{
+    margin-bottom: 48px;
+    border-top: 0.4px solid;
+    color: #fff2e7;
+}
+.conteudo-principal{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+.conteudo-principal-escrito{
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.conteudo-principal-escrito-titulo{
+    font-family: 'Righteus', cursive;
+    font-weight: 400px;
+    font-size: 64px;
+    color: #fff2ef;
+}
+
+.conteudo-principal-escrito-subtitulo{
+    font-family:'Sarala', sans-serif ;
+    font-weight: 400px;
+    font-size: 24px;
+    color: #ECD6C4;
+}
+
+.conteudo-principal-escrito-botao{
+    background-color: #ECD6C4;
+    width: 180px;
+    height: 60px;
+    border: none;
+    box-shadow: 4px 5px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    font-family: 'Sarala', sans-serif;
+    font-weight: 400px;
+    font-size: 24px;
+    color: #2f2325;
+}
+.conteudo-principal-escrito-botao:hover{
+    background-color: #ee6a1e;
+}
+
+/* .conteudo-principal-imagem{
+    height: 420px;
+
+} */
+.conteudo-principal-imagem{
+    height: 420px;
+    width: 420px;
+    float: right;
+    margin: 20px 10px;
+    border-radius: 50%;
+    background: #2d6ff7;
+    background: url('../img/cinzinha.png');
+}
+.conteudo-principal-imagem:hover{
+    background: url('../img/laranjinha.png');
+    
+}
+
+
+.conteudo-secundario{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    margin-top: 48px;
+}
+.conteudo-secundario-titulo{
+    border-top: 0.4px #fff2e7 solid;
+    padding-top:48px ;
+    font-family: 'Righteus', cursive;
+    font-weight: 400px;
+    font-size: 24px;
+    color: #fff2ef;
+    margin-bottom: 16px;
+}
+.conteudo-secundario-paragrafo{
+    font-family: 'Sarala', sans-serif;
+    font-weight: 300px;
+    font-size: 18px;
+    color: #ECD6C4;
+}
+.rodape{
+    padding: 32px;
+    border-top: 0.4px #fff2e7 solid;
+}
+.rodape-imagem{
+    height: 300px;
+    display: block;
+    margin: 0 auto;
+}
+
+
+.conteudo-produtos{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 14px;
+    margin-top: 30px;
+    /* border-top: 0.4px #fff2e7 solid; */
+    padding-top:20px ;
+    /* font-family: 'Righteus', cursive; */
+    font-weight: 400px;
+    font-size: 24px;
+    color: white;
+    /* margin-bottom:50px; */
+}
+.produtos{
+    font-family: 'Times New Roman',Times,serif;
+    margin-top: 18px;
+    /* font-family: 'Sarala', sans-serif; */
+    font-weight: 300px;
+    font-size: 18px;
+    color: whitesmoke;
+    
+}
+.produtos:hover{
+    color: #ee6a1e;
+}
+
+
+.rodape-produtos-imagem{
+    height: 300px;
+    display: block;
+    margin: 0 auto;
+    
+}
+
+.cabecalho-galeria{
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    font-family: 'Righteus', cursive;
+    
+}
+
+
+
+.galeria-item{
+    width: 300px;
+    height: 300px;
+    padding: 5px;
+    /* background-color: purple; */
+    background: none;
+}
+.galeria-botao{
+    background-color: #ECD6C4;
+    width: 60px;
+    height: 40px;
+    border: none;
+    box-shadow: 4px 5px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    font-family: 'Sarala', sans-serif;
+    font-weight: 100px;
+    font-size: 14px;
+    color: #2f2325;
+}
+.galeria-botao:hover{
+    /* background-color: rgba(236, 214, 196, 0.53); */
+    background-color: #ee6a1e;
+}
+.produtos-botao{
+    background-color: #ECD6C4;
+    width: 60px;
+    height: 40px;
+    border: none;
+    box-shadow: 4px 5px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    font-family: 'Sarala', sans-serif;
+    font-weight: 100px;
+    font-size: 14px;
+    color: #2f2325;
+}
+.produtos-botao:hover{
+    /* background-color: rgba(236, 214, 196, 0.53); */
+    background-color: #ee6a1e;
+}
