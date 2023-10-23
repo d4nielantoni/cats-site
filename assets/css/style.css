@@ -177,9 +177,7 @@ body{
     display: flex;
     justify-content: center;
     font-family: 'Righteus', cursive;
-    
 }
-
 
 
 .galeria-item{
@@ -188,6 +186,8 @@ body{
     padding: 5px;
     /* background-color: purple; */
     background: none;
+    object-fit: cover;
+    /* margin-bottom:180px; */
 }
 .galeria-botao{
     background-color: #ECD6C4;
@@ -220,4 +220,7 @@ body{
 .produtos-botao:hover{
     /* background-color: rgba(236, 214, 196, 0.53); */
     background-color: #ee6a1e;
+}
+.rodape-galeria{
+    margin-bottom:400px;
 }
