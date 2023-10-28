@@ -203,7 +203,7 @@ body{
     justify-content: space-evenly;
     display: grid;
     gap: 10px;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr ;
     padding: 200px;
     flex-wrap: wrap;
     gap: 2vw;
@@ -310,23 +310,14 @@ body{
     overflow: auto;
     background-attachment: fixed;
 }
+
+
 @media screen and (max-width: 768px){
 
-    .conteudo-principal{
-        /* width: 700px; */
-        height: 400px;
-        /* height: auto; */
-        text-align: center;
+    .galeria-container{
+        
+        flex-direction: column;
+        grid-template-columns: 1fr;
     }
-}
-@media screen and (max-width: 768px){
-
-    .conteudo-secundario{
-        /* width: 700px; */
-        height: 400px;
-        /* height: auto; */
-        align-items: center;
-        text-align: center;
-    }
-}
     
+}
