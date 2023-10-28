@@ -9,7 +9,8 @@
 }
 body{
     font-size: 100%;
-    background:linear-gradient(10deg,#fffff4 0, #fffff2 4.17%, #ffffef 8.33%, #ffffec 12.5%, #ffffe8 16.67%, #ffffe4 20.83%, #ffffe0 25%, #feffdc 29.17%, #f3ffd7 33.33%, #e6ffd3 37.5%, #d8fbcf 41.67%, #c7f7cc 45.83%, #b5f2c9 50%, #a1edc8 54.17%, #8de9c9 58.33%, #79e4cc 62.5%, #63e0d0 66.67%, #4bddd6 70.83%, #2fd9dd 75%, #00d6e4 79.17%, #00d3eb 83.33%, #00d0f3 87.5%, #00cdfa 91.67%, #00cbff 95.83%, #22c9ff 100%)
+    /* background:linear-gradient(10deg,#fffff4 0, #fffff2 4.17%, #ffffef 8.33%, #ffffec 12.5%, #ffffe8 16.67%, #ffffe4 20.83%, #ffffe0 25%, #feffdc 29.17%, #f3ffd7 33.33%, #e6ffd3 37.5%, #d8fbcf 41.67%, #c7f7cc 45.83%, #b5f2c9 50%, #a1edc8 54.17%, #8de9c9 58.33%, #79e4cc 62.5%, #63e0d0 66.67%, #4bddd6 70.83%, #2fd9dd 75%, #00d6e4 79.17%, #00d3eb 83.33%, #00d0f3 87.5%, #00cdfa 91.67%, #00cbff 95.83%, #22c9ff 100%); */
+    background: linear-gradient(135deg, #ff83ec 0, #e46ee4 25%, #be55d8 50%, #943ecc 75%, #6a31c5 100%);
 }
 .cabecalho{
     display: flex;
@@ -32,15 +33,15 @@ body{
     color: #ee6a1e;
 }
 .cabecalho-menu-item{
-    font-family: 'Sarala', sans-serif;
+    font-family:  'Righteus', cursive;
     color: white;
     height: 400;
     font-size: 18px;
 }
 .conteudo{
     margin-bottom: 48px;
-    border-top: 0.4px solid;
-    color: #fff2e7;
+    /* border-top: 0.4px solid; */
+    /* color: #fff2e7; */
 }
 .conteudo-principal{
     display: flex;
@@ -82,6 +83,8 @@ body{
 }
 .conteudo-principal-escrito-botao:hover{
     background-color: #ee6a1e;
+    transform:scale(1.1); 
+    transition: all 0.3s ease; 
 }
 
 /* .conteudo-principal-imagem{
@@ -91,7 +94,8 @@ body{
 .conteudo-principal-imagem{
     height: 420px;
     width: 420px;
-    float: right;
+    /* float: right; */
+    text-align: center;
     margin: 20px 10px;
     border-radius: 50%;
     background: #2d6ff7;
@@ -99,20 +103,22 @@ body{
 }
 .conteudo-principal-imagem:hover{
     background: url('../img/laranjinha.png');
+    transition: all 0.3s ease; 
+
     
 }
-
-
 .conteudo-secundario{
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 24px;
-    margin-top: 48px;
+    /* gap: 24px; */
+    /* margin-top: 48px; */
 }
 .conteudo-secundario-titulo{
-    border-top: 0.4px #fff2e7 solid;
-    padding-top:48px ;
+    /* border-top: 0.4px #fff2e7 solid; */
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+    /* padding-top:48px ; */
     font-family: 'Righteus', cursive;
     font-weight: 400px;
     font-size: 24px;
@@ -120,19 +126,25 @@ body{
     margin-bottom: 16px;
 }
 .conteudo-secundario-paragrafo{
-    font-family: 'Sarala', sans-serif;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+    font-family: 'Righteus', cursive;
     font-weight: 300px;
     font-size: 18px;
     color: #ECD6C4;
 }
-.rodape{
-    padding: 32px;
-    border-top: 0.4px #fff2e7 solid;
+.conteudo-principal-imagem{
+    /* padding: 32px; */
+    /* border-top: 0.4px #fff2e7 solid; */
+
+    /* height: 300px; */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 .rodape-imagem{
-    height: 300px;
-    display: block;
-    margin: 0 auto;
+    
+    /* margin: 0 auto; */
 }
 
 
@@ -151,9 +163,14 @@ body{
     color: white;
     /* margin-bottom:50px; */
 }
+.produtos-titulo{
+    font-family: 'Righteus', cursive;
+    text-align: center;
+    color: white;
+}
 .produtos{
-    font-family: 'Times New Roman',Times,serif;
-    margin-top: 18px;
+    font-family: 'Righteus', cursive;
+    margin-top: 32px;
     /* font-family: 'Sarala', sans-serif; */
     font-weight: 300px;
     font-size: 18px;
@@ -162,6 +179,7 @@ body{
 }
 .produtos:hover{
     color: #ee6a1e;
+     
 }
 
 
@@ -169,26 +187,59 @@ body{
     height: 300px;
     display: block;
     margin: 0 auto;
-    margin-bottom: 500px;
+    margin-bottom: 400px;
+    
 }
-
 .cabecalho-galeria{
     height: 90px;
-    display: flex;
-    justify-content: center;
+    display: block;
+    text-align: center;
     font-family: 'Righteus', cursive;
+    color: white;
 }
 
+.galeria-container{
+    margin-top: -170px;
+    justify-content: space-evenly;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    padding: 200px;
+    flex-wrap: wrap;
+    gap: 2vw;
+    padding: 1 1vw;
+   
+    
+}
+.galeria-item {
+    width: 340px;
+    height: 330px;
+    padding: 5px;
+    object-fit: cover;
+    box-sizing: border-box;
+    /* border: 2px solid #ffd000; */
+    /* box-shadow: 1px 1px 1px; */
+    flex-grow: 1;
+    justify-content:space-around;
+    display: flex;
+    filter: grayscale(90%);
+    /* filter:opacity(1); */
+    margin-left: auto;
+    margin-right: auto;
+    transition: all 0.3s ease; 
+}
+.galeria-item:hover{
+    transform:scale(1.1);  
+    filter: none;
+}
 
-.galeria-item{
+/* .galeria-item{
     width: 300px;
     height: 300px;
     padding: 5px;
-    /* background-color: purple; */
     background: none;
     object-fit: cover;
-    /* margin-bottom:180px; */
-}
+} */
 .galeria-botao{
     background-color: #ECD6C4;
     width: 60px;
@@ -196,10 +247,14 @@ body{
     border: none;
     box-shadow: 4px 5px 4px rgba(0, 0, 0, 0.25);
     border-radius: 20px;
-    font-family: 'Sarala', sans-serif;
+    font-family: 'Righteus', cursive;
     font-weight: 100px;
     font-size: 14px;
     color: #2f2325;
+    transform:scale(1.1); 
+    transition: all 0.3s ease; 
+    
+    
 }
 .galeria-botao:hover{
     /* background-color: rgba(236, 214, 196, 0.53); */
@@ -212,7 +267,7 @@ body{
     border: none;
     box-shadow: 4px 5px 4px rgba(0, 0, 0, 0.25);
     border-radius: 20px;
-    font-family: 'Sarala', sans-serif;
+    font-family: 'Righteus', cursive;
     font-weight: 100px;
     font-size: 14px;
     color: #2f2325;
@@ -224,3 +279,54 @@ body{
 .rodape-galeria{
     margin-bottom:700px;
 }
+
+.conteudo-secundario{
+    color:white;
+    
+    font-size:30px;
+    /* width: 2000px; */
+    height: 700px;
+    background-size:contain;
+    background-image: url('../img/dormindo.jpeg');
+    overflow: auto;
+    background-attachment:fixed;
+}
+
+.conteudo-principal{
+    color: white;
+    /* width: 2000px; */
+    height: 900px;
+    background-size: contain;
+    background-image: url('../img/kin-dormindo.jpeg');
+    overflow: auto;
+    background-attachment: fixed;
+}
+.conteudo-terciario{
+    color: white;
+    /* width: 2000px; */
+    height: 800px;
+    background-size: contain;
+    background-image: url('../img/br.jpeg');
+    overflow: auto;
+    background-attachment: fixed;
+}
+@media screen and (max-width: 768px){
+
+    .conteudo-principal{
+        /* width: 700px; */
+        height: 400px;
+        /* height: auto; */
+        text-align: center;
+    }
+}
+@media screen and (max-width: 768px){
+
+    .conteudo-secundario{
+        /* width: 700px; */
+        height: 400px;
+        /* height: auto; */
+        align-items: center;
+        text-align: center;
+    }
+}
+    
